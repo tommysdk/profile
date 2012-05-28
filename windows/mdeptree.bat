@@ -1,0 +1,1 @@
+mvn dependency:tree > target\dependencytree.txt && start target\dependencytree.txt
