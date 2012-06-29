@@ -1,1 +1,1 @@
-mvn cobertura:cobertura
+mvn cobertura:cobertura %*
