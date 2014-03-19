@@ -7,7 +7,7 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/Users/tommy/dev/servers/mongodb-2.4.4/bin:$PATH
 
 #export JAVA_HOME=/usr/libexec/java_home
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_10.jdk/Contents/Home/
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/
 export JBOSS_HOME=/Users/tommy/dev/servers/jboss-as-7.1.1.Final/
 export RBENV_ROOT=/usr/local/var/rbenv
 export PATH=$RBENV_ROOT:$PATH
