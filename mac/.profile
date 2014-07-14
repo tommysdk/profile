@@ -1,7 +1,9 @@
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/Users/tommy/dev/lang/scala-2.9.2/bin:/Users/tommy/dev/tools/apache-maven-3.0.4/bin
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/Users/tommy/dev/tools/apache-maven-3.0.4/bin
+export PATH=/Users/tommy/dev/lang/scala-2.10.3/bin:$PATH
+export PATH=/Users/tommy/dev/lang/groovy-2.3.4/bin:$PATH
 export PATH=/Users/tommy/dev/tools/sbt/bin:$PATH
 export PATH=/Users/tommy/dev/tools/play-2.0.4:$PATH
-export PATH=/Users/tommy/dev/tools/gradle-1.3/bin:$PATH
+export PATH=/Users/tommy/dev/tools/gradle-2.0/bin:$PATH
 export PATH=/Users/tommy/dev/lang/clojure-1.5.1:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/Users/tommy/dev/servers/mongodb-2.4.4/bin:$PATH
@@ -16,3 +18,5 @@ export MAVEN_OPTS=-Xmx1024m
 alias ll='ls -l'
 eval "$(rbenv init -)"
 
+source ~/.git-prompt.sh
+source ~/.git_prompt
