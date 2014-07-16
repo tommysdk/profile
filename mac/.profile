@@ -3,6 +3,7 @@ export PATH=/Users/tommy/dev/lang/scala-2.10.3/bin:$PATH
 export PATH=/Users/tommy/dev/lang/groovy-2.3.4/bin:$PATH
 export PATH=/Users/tommy/dev/tools/sbt/bin:$PATH
 export PATH=/Users/tommy/dev/tools/play-2.0.4:$PATH
+export PATH=/Users/tommy/dev/tools/grails-2.4.2/bin:$PATH
 export PATH=/Users/tommy/dev/tools/gradle-2.0/bin:$PATH
 export PATH=/Users/tommy/dev/lang/clojure-1.5.1:$PATH
 export PATH=/usr/local/bin:$PATH
