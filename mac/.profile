@@ -16,7 +16,15 @@ export RBENV_ROOT=/usr/local/var/rbenv
 export PATH=$RBENV_ROOT:$PATH
 export MAVEN_OPTS=-Xmx1024m
 
-alias ll='ls -l'
+alias ll='ls -al'
+
+alias mi='mvn clean install'
+alias mist='mvn clean install -DskipTests=true'
+alias fit='git'
+alias gut='git'
+alias got='git'
+alias pull='git stash -u && git pull --rebase && git stash pop'
+
 eval "$(rbenv init -)"
 
 source ~/.git-prompt.sh
