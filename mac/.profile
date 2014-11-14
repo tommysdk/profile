@@ -24,6 +24,7 @@ alias mist='mvn clean install -DskipTests=true'
 alias fit='git'
 alias gut='git'
 alias got='git'
+alias master='git checkout master'
 alias pull='git stash -u && git pull --rebase && git stash pop'
 
 eval "$(rbenv init -)"
