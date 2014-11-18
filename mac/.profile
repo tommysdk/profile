@@ -18,6 +18,7 @@ export MAVEN_OPTS=-Xmx1024m
 
 alias ll='ls -al'
 alias lldir='ls -ld */'
+alias clip='pbcopy'
 
 alias mi='mvn clean install'
 alias mist='mvn clean install -DskipTests=true'
