@@ -8,7 +8,9 @@ export PATH=/Users/tommy/dev/tools/gradle-2.0/bin:$PATH
 export PATH=/Users/tommy/dev/lang/clojure-1.5.1:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/Users/tommy/dev/servers/mongodb-2.4.4/bin:$PATH
-export DOCKER_HOST=tcp://192.168.59.103:2375
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/tommy/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
 
 #export JAVA_HOME=/usr/libexec/java_home
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home/
