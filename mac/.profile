@@ -19,6 +19,10 @@ export RBENV_ROOT=/usr/local/var/rbenv
 export PATH=$RBENV_ROOT:$PATH
 export MAVEN_OPTS=-Xmx1024m
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+$(boot2docker shellinit)
+
 alias ll='ls -al'
 alias lldir='ls -ld */'
 alias clip='pbcopy'
