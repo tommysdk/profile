@@ -1,0 +1,29 @@
+# Install homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+# Install Textmate
+brew install caskroom/cask/brew-cask
+brew cask install textmate
+
+# Install Java
+brew install wget
+wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u91-b14/jdk-8u91-macosx-x64.dmg -O ~/Downloads/jdk-8u91-macosx-x64.dmg
+sudo hdiutil attach ~/Downloads/jdk-8u91-macosx-x64.dmg
+sudo installer -package /Volumes/JDK\ 8\ Update\ 91/JDK\ 8\ Update\ 91.pkg -target /
+sudo hdiutil detach /Volumes/JDK\ 8\ Update\ 91/
+
+# Install Scala & Groovy
+brew install scala
+brew install groovy
+
+# Install build tools
+brew install maven
+brew install gradle
+
+# Install AWS CLI
+sudo easy_install pip
+sudo -H pip install awscli --ignore-installed six
+
+# Create directories
+cd ~
+mkdir -p ~/dev/projects
