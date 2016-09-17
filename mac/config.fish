@@ -11,8 +11,6 @@ set __fish_git_prompt_showcolorhints 'yes'
 set __fish_git_prompt_color_upstream_ahead green
 set __fish_git_prompt_color_upstream_behind red
 
-#source ~/.config/fish/__fish_git_prompt.fish
-
 function fish_prompt 
     set -l git_branch (git branch ^/dev/null | sed -n '/\* /s///p')
     set_color -b brblue
@@ -31,11 +29,7 @@ function fish_prompt
     set_color normal
 end
 
-add_to_path /usr/bin /bin /usr/local/bin /usr/sbin /sbin /Users/tommy.tynja/dev/tools/apache-maven-3.3.9/bin
-add_to_path /Users/tommy.tynja/dev/tools/groovy-2.4.5/bin
-add_to_path /Users/tommy.tynja/dev/tools/gradle-2.11/bin
-add_to_path /Users/tommy.tynja/dev/tools/scala-2.11.7/bin
-add_to_path /Library/Frameworks/Python.framework/Versions/3.5/bin
+add_to_path /usr/bin /bin /usr/local/bin /usr/sbin /sbin
 export PATH
 
 export LC_ALL=en_US.UTF-8
@@ -57,5 +51,6 @@ alias pull "git stash -u; AND git pull --rebase; AND git stash pop"
 alias last "git log -n 1 --stat | cat"
 alias dc "docker ps -aq | xargs docker rm -f"
 
-eval (docker-machine env default)
-set DOCKER_MAHINE_NAME default
+# Use below if using docker machine
+#eval (docker-machine env default)
+#set DOCKER_MAHINE_NAME default
