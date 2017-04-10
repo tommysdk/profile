@@ -13,7 +13,25 @@
         lg = log -p
         hist = log --pretty=format:\"%C(magenta) %ad %C(yellow)%h %Creset%s%d %C(cyan) [%an]\" --graph --date=short
         prettyhist = log --pretty=format:"%C(magenta) %ad %C(cyan)[%an] %Creset%s%d" --date=short
+        graph = log --graph --abbrev-commit --decorate --date=relative --all
         list = log ORIG_HEAD.. --stat --no-merges
         type = cat-file -t
         dump = cat-file -p
         undo = reset --hard
+[color]
+        branch = auto
+        diff = auto
+        status = auto
+[color "branch"]
+        current = yellow reverse
+        local = yellow
+        remote = green
+[color "diff"]
+        meta = yellow bold
+        frag = magenta bold
+        old = red bold
+        new = green bold
+[color "status"]
+        added = yellow
+        changed = green
+        untracked = cyan
