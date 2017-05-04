@@ -50,6 +50,7 @@ alias master "git checkout master"
 alias pull "git stash -u; AND git pull --rebase; AND git stash pop"
 alias last "git log -n 1 --stat | cat"
 alias dc "docker ps -aq | xargs docker rm -f"
+alias dps "docker ps --format 'table {{.ID}}\t{{.Image}}\t{{.RunningFor}}\t{{.Status}}'"
 
 # Use below if using docker machine
 #eval (docker-machine env default)
