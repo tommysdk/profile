@@ -10,6 +10,7 @@
         br = branch
         df = diff
         dc = diff --cached
+        db = branch -D
         lg = log -p
         head = rev-list HEAD --max-count=1
         sha = rev-list HEAD --max-count=1
