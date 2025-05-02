@@ -12,7 +12,7 @@ set __fish_git_prompt_color_upstream_ahead green
 set __fish_git_prompt_color_upstream_behind red
 
 function fish_prompt 
-    set -l git_branch (git branch ^/dev/null | sed -n '/\* /s///p')
+    set -l git_branch (git branch 2>/dev/null | sed -n '/\* /s///p')
     set_color -b brblue
     set_color black
     echo -n (date +%H:%M)' ' 
